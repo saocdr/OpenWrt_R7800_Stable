@@ -47,8 +47,8 @@ svn export https://github.com/coolsnowwolf/lede/tree/master/package/lean/default
 # 添加UPX UCL工具包
 # cp -r lede/tools/upx tools
 # cp -r lede/tools/ucl tools
-mkdir -p tools/ucl && wget -P tools/ucl https://github.com/coolsnowwolf/lede/tree/master/package/lean/ucl/Makefile
-mkdir -p tools/upx && wget -P tools/upxh ttps://github.com/coolsnowwolf/lede/tree/master/package/lean/upx/Makefile
+# mkdir -p tools/ucl && wget -P tools/ucl https://github.com/coolsnowwolf/lede/tree/master/package/lean/ucl/Makefile
+# mkdir -p tools/upx && wget -P tools/upxh ttps://github.com/coolsnowwolf/lede/tree/master/package/lean/upx/Makefile
 
 # 修改makefile
 sed  -i '/^# builddir dependencies/i\tools-y += ucl upx' ./tools/Makefile
